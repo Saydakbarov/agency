@@ -1,0 +1,68 @@
+.country{
+    width: 100%;
+    height: 350px;
+    position: relative;
+
+    .rotateText{
+      transform: rotate(-90deg);
+      position: absolute;
+      top: 50%;
+      left: -5%;
+      color: gray;
+      font-weight: 500;
+
+      @media screen and (max-width:3000px) {
+        left: -4%;
+        
+      }
+    }
+    .swiper {
+        width: 95%;
+        height: 100%;
+    
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            height: 300px;
+            position: relative; 
+            border-radius: 10px;
+
+            .aboutContry{
+              display: none;
+            }
+            
+            .countryTitle{
+              transform: translateY(0px);
+              transition: all 0.6s;
+              text-align: center;
+            }
+
+
+            &:hover{
+              .countryTitle{
+                transform: translateY(-150px);
+              }
+
+              .aboutContry{
+                display: block;
+                font-size: 30px;
+                padding: 10px;
+                border-radius: 50%;
+                border: 1px solid white;
+                margin: -350px auto;
+                color: white;
+                cursor: pointer;
+                background-color: wheat;
+                color: black;
+                position: relative;
+                z-index: 2;
+              }
+            }
+          } 
+      }
+
+      .swiper-pagination{
+        position: absolute;
+        bottom: 0%;
+      }
+}

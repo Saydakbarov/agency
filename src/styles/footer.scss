@@ -1,0 +1,25 @@
+.footer{
+  background-image:
+  linear-gradient(to top, rgba(33, 33, 57, 0.99) , rgba(125, 106, 152, 0.514) ),
+  url("https://www.linkpicture.com/q/23324.jpg");
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    padding: 0px 20px 30px 20px;
+
+
+    @media  screen and (max-width:3500px) {
+      padding: 20px 100px 30px 100px;
+    }
+
+    @media  screen and (max-width:920px) {
+        padding: 0px 20px 30px 20px;
+          
+      }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
